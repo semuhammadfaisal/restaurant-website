@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience exceptional dining at our restaurant with fresh ingredients, authentic flavors, and warm hospitality.">
+    <meta name="keywords" content="restaurant, dining, food, cuisine, fresh ingredients">
+    <meta name="author" content="Restaurant Name">
+    <meta property="og:title" content="Restaurant Name - Exceptional Dining Experience">
+    <meta property="og:description" content="Experience exceptional dining with fresh ingredients and authentic flavors.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourrestaurant.com">
+    <meta property="og:image" content="images/restaurant-hero.jpg">
+    
+    <title>Restaurant Name - Exceptional Dining Experience</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header with sticky navigation and mobile menu -->
+    <header role="banner" class="header">
+        <nav role="navigation" aria-label="Main navigation" class="navbar">
+            <div class="logo">
+                <h1>Delicious</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    
+    <main id="main-content" role="main">
+        <!-- Hero with background image and CTAs -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Exceptional Dining Experience</h2>
+                <p>Fresh ingredients, authentic flavors, and warm hospitality</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">View Menu</a>
+                    <a href="#contact" class="btn btn-secondary">Book Table</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured menu items grid -->
+        <section id="menu" class="featured-menu">
+            <div class="container">
+                <h2>Featured Menu</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="images/menu/dish1.jpg" alt="Grilled Salmon">
+                        <h3>Grilled Salmon</h3>
+                        <p>Fresh Atlantic salmon with herbs</p>
+                        <span class="price">$24.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/menu/dish2.jpg" alt="Beef Tenderloin">
+                        <h3>Beef Tenderloin</h3>
+                        <p>Premium cut with seasonal vegetables</p>
+                        <span class="price">$32.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/menu/dish3.jpg" alt="Pasta Primavera">
+                        <h3>Pasta Primavera</h3>
+                        <p>Fresh pasta with garden vegetables</p>
+                        <span class="price">$18.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/menu/dish4.jpg" alt="Chocolate Cake">
+                        <h3>Chocolate Cake</h3>
+                        <p>Rich chocolate with berry compote</p>
+                        <span class="price">$8.99</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- "Why Choose Us" feature boxes -->
+        <section id="about" class="why-choose-us">
+            <div class="container">
+                <h2>Why Choose Us</h2>
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Fresh Ingredients</h3>
+                        <p>Locally sourced, organic ingredients delivered daily</p>
+                    </div>
+                    <div class="feature-box">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Expert Chefs</h3>
+                        <p>Award-winning chefs with years of culinary expertise</p>
+                    </div>
+                    <div class="feature-box">
+                        <i class="fas fa-heart"></i>
+                        <h3>Warm Service</h3>
+                        <p>Friendly staff dedicated to your dining experience</p>
+                    </div>
+                    <div class="feature-box">
+                        <i class="fas fa-star"></i>
+                        <h3>Quality Guarantee</h3>
+                        <p>100% satisfaction guaranteed or your money back</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Special offers with countdown timer -->
+        <section id="offers" class="special-offers">
+            <div class="container">
+                <h2>Special Offers</h2>
+                <div class="offer-card">
+                    <h3>Weekend Special</h3>
+                    <p>Get 20% off on all main courses this weekend!</p>
+                    <div class="countdown" id="countdown">
+                        <div class="time-unit">
+                            <span id="days">00</span>
+                            <label>Days</label>
+                        </div>
+                        <div class="time-unit">
+                            <span id="hours">00</span>
+                            <label>Hours</label>
+                        </div>
+                        <div class="time-unit">
+                            <span id="minutes">00</span>
+                            <label>Minutes</label>
+                        </div>
+                        <div class="time-unit">
+                            <span id="seconds">00</span>
+                            <label>Seconds</label>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonial carousel -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonial-carousel">
+                    <div class="testimonial active">
+                        <p>"Amazing food and excellent service! The atmosphere is perfect for a romantic dinner."</p>
+                        <div class="customer">
+                            <img src="images/team/customer1.jpg" alt="Sarah Johnson">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Best restaurant in town! The chef's special is absolutely incredible."</p>
+                        <div class="customer">
+                            <img src="images/team/customer2.jpg" alt="Mike Davis">
+                            <div>
+                                <h4>Mike Davis</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Outstanding quality and presentation. Will definitely come back again!"</p>
+                        <div class="customer">
+                            <img src="images/team/customer3.jpg" alt="Emily Chen">
+                            <div>
+                                <h4>Emily Chen</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="prev" aria-label="Previous testimonial">&lt;</button>
+                    <button class="next" aria-label="Next testimonial">&gt;</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- App download section -->
+        <section class="app-download">
+            <div class="container">
+                <div class="app-content">
+                    <div class="app-text">
+                        <h2>Download Our App</h2>
+                        <p>Order online, make reservations, and get exclusive offers with our mobile app.</p>
+                        <div class="app-buttons">
+                            <a href="#" class="app-btn">
+                                <img src="images/icons/app-store.png" alt="Download on App Store">
+                            </a>
+                            <a href="#" class="app-btn">
+                                <img src="images/icons/google-play.png" alt="Get it on Google Play">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="app-image">
+                        <img src="images/app-mockup.png" alt="Restaurant app mockup">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Restaurant Street, City, State 12345</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+1234567890">(123) 456-7890</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@restaurant.com">info@restaurant.com</a></p>
+                </address>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Four-column footer -->
+    <footer role="contentinfo" class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>About Delicious</h3>
+                    <p>Experience exceptional dining with fresh ingredients, authentic flavors, and warm hospitality.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li>Mon-Thu: 11:00 AM - 10:00 PM</li>
+                        <li>Fri-Sat: 11:00 AM - 11:00 PM</li>
+                        <li>Sunday: 12:00 PM - 9:00 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@restaurant.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Restaurant St</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Delicious Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
