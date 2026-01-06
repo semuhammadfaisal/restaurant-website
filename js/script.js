@@ -1,3 +1,74 @@
+// Counter Animation
+function animateCounters() {
+    const counters = document.querySelectorAll('.stat-value[data-count]');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.getAttribute('data-count'));
+                const duration = 2000; // 2 seconds
+                const increment = target / (duration / 16); // 60fps
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    
+                    // Format the number based on the target
+                    if (target >= 1000) {
+                        counter.textContent = Math.floor(current / 1000) + 'k+';
+                    } else if (counter.closest('.stat-item').querySelector('.stat-label').textContent.includes('Satisfaction')) {
+                        counter.textContent = Math.floor(current) + '%';
+                    } else {
+                        counter.textContent = Math.floor(current) + '+';
+                    }
+                }, 16);
+                
+                observer.unobserve(counter);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    counters.forEach(counter => observer.observe(counter));
+}
+
+// Scroll animations
+function initScrollAnimations() {
+    const animatedElements = document.querySelectorAll('.menu-item, .feature-box, .testimonial-card, .product-item');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    animatedElements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+}
+
+// Parallax effect for hero burger
+function initParallaxEffect() {
+    const burger = document.querySelector('.hero-burger-image');
+    if (!burger) return;
+    
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const rate = scrolled * -0.5;
+        burger.style.transform = `translateY(${rate}px)`;
+    });
+}
+
 // Mobile menu toggle
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
 const navMenu = document.querySelector('.nav-menu');
@@ -108,4 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initCountdown();
     initTestimonialCarousel();
     initMenuEffects();
+    animateCounters();
+    initScrollAnimations();
+    initParallaxEffect();
 });

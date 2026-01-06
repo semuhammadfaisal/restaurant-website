@@ -3,6 +3,40 @@ document.addEventListener('DOMContentLoaded', function() {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const productItems = document.querySelectorAll('.product-item');
     const loadMoreBtn = document.querySelector('.load-more-btn');
+    const expandBtn = document.getElementById('expandProductsBtn');
+    const productsGrid = document.querySelector('.products-grid');
+
+    // Initialize collapsed state
+    if (productsGrid && expandBtn) {
+        productsGrid.classList.add('collapsed');
+    }
+
+    // Expand/Collapse functionality
+    if (expandBtn) {
+        expandBtn.addEventListener('click', function() {
+            const isCollapsed = productsGrid.classList.contains('collapsed');
+            const btnText = this.querySelector('.btn-text');
+            const btnIcon = this.querySelector('i');
+            
+            if (isCollapsed) {
+                // Expand
+                productsGrid.classList.remove('collapsed');
+                btnText.textContent = 'Show Less Products';
+                this.classList.add('expanded');
+            } else {
+                // Collapse
+                productsGrid.classList.add('collapsed');
+                btnText.textContent = 'Show All Products';
+                this.classList.remove('expanded');
+                
+                // Scroll to products section
+                document.querySelector('#products').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    }
 
     // Filter functionality
     filterButtons.forEach(button => {
