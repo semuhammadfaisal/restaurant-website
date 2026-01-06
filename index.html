@@ -21,17 +21,14 @@
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
-    <!-- Header with sticky navigation and mobile menu -->
+    <!-- Center Aligned Navbar -->
     <header role="banner" class="header">
         <nav role="navigation" aria-label="Main navigation" class="navbar">
-            <div class="logo">
-                <h1>Delicious</h1>
-            </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#offers">Offers</a></li>
+                <li class="logo"><a href="#home">Delicious</a></li>
+                <li><a href="#products">Products</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
@@ -43,251 +40,1841 @@
     </header>
     
     <main id="main-content" role="main">
-        <!-- Hero with background image and CTAs -->
+        <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="hero-content">
-                <h2>Exceptional Dining Experience</h2>
-                <p>Fresh ingredients, authentic flavors, and warm hospitality</p>
-                <div class="hero-buttons">
-                    <a href="#menu" class="btn btn-primary">View Menu</a>
-                    <a href="#contact" class="btn btn-secondary">Book Table</a>
+            <div class="hero-container">
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <h1 class="hero-title">DELICIOUS<br>RESTAURANT</h1>
+                    
+                    <p class="hero-description">
+                        Fresh ingredients, authentic flavors, and warm hospitality. 
+                        Every bite tells our story of culinary excellence.
+                    </p>
+
+                    <!-- Stats -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">50+</span>
+                            <span class="stat-label">Menu Items</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">15k+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">98%</span>
+                            <span class="stat-label">Satisfaction</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-cta">
+                        <a href="#menu" class="btn btn-primary">View Menu</a>
+                        <a href="#contact" class="btn btn-secondary">Book Table</a>
+                    </div>
+                </div>
+
+                <!-- Right Content - Burger Image -->
+                <div class="hero-featured">
+                    <img src="images/gallery/Floating-burger-PNG.png" alt="Delicious Burger" class="hero-burger-image">
                 </div>
             </div>
+
+            <!-- Decorative Element -->
+            <div class="hero-decoration"></div>
         </section>
         
-        <!-- Featured menu items grid -->
+        <!-- Enhanced Featured Menu -->
         <section id="menu" class="featured-menu">
             <div class="container">
-                <h2>Featured Menu</h2>
+                <div class="section-header">
+                    <h2>Featured Menu</h2>
+                    <p class="section-subtitle">Discover our chef's signature dishes crafted with passion and finest ingredients</p>
+                </div>
                 <div class="menu-grid">
                     <div class="menu-item">
-                        <img src="images/menu/dish1.jpg" alt="Grilled Salmon">
-                        <h3>Grilled Salmon</h3>
-                        <p>Fresh Atlantic salmon with herbs</p>
-                        <span class="price">$24.99</span>
+                        <div class="menu-image">
+                            <img src="images/gallery/grilled-salmon-recipe-2.jpg" alt="Grilled Salmon">
+                            <div class="menu-overlay">
+                                <button class="order-btn">Order Now</button>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <div class="menu-header">
+                                <h3>Grilled Salmon</h3>
+                                <span class="price">$24.99</span>
+                            </div>
+                            <p>Fresh Atlantic salmon with herbs and seasonal vegetables</p>
+                            <div class="menu-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="category">Seafood</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="menu-item">
-                        <img src="images/menu/dish2.jpg" alt="Beef Tenderloin">
-                        <h3>Beef Tenderloin</h3>
-                        <p>Premium cut with seasonal vegetables</p>
-                        <span class="price">$32.99</span>
+                        <div class="menu-image">
+                            <img src="images/gallery/easy-oven-roasted-whole-beef-tenderloin-11.jpg" alt="Beef Tenderloin">
+                            <div class="menu-overlay">
+                                <button class="order-btn">Order Now</button>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <div class="menu-header">
+                                <h3>Beef Tenderloin</h3>
+                                <span class="price">$32.99</span>
+                            </div>
+                            <p>Premium cut with seasonal vegetables and red wine reduction</p>
+                            <div class="menu-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="category">Meat</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="menu-item">
-                        <img src="images/menu/dish3.jpg" alt="Pasta Primavera">
-                        <h3>Pasta Primavera</h3>
-                        <p>Fresh pasta with garden vegetables</p>
-                        <span class="price">$18.99</span>
+                        <div class="menu-image">
+                            <img src="images/gallery/PastaPrimavera_10.webp" alt="Pasta Primavera">
+                            <div class="menu-overlay">
+                                <button class="order-btn">Order Now</button>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <div class="menu-header">
+                                <h3>Pasta Primavera</h3>
+                                <span class="price">$18.99</span>
+                            </div>
+                            <p>Fresh pasta with garden vegetables and creamy parmesan sauce</p>
+                            <div class="menu-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                                <span class="category">Pasta</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="menu-item">
-                        <img src="images/menu/dish4.jpg" alt="Chocolate Cake">
-                        <h3>Chocolate Cake</h3>
-                        <p>Rich chocolate with berry compote</p>
-                        <span class="price">$8.99</span>
+                        <div class="menu-image">
+                            <img src="images/gallery/triple-chocolate-cake-4.jpg" alt="Chocolate Cake">
+                            <div class="menu-overlay">
+                                <button class="order-btn">Order Now</button>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <div class="menu-header">
+                                <h3>Chocolate Cake</h3>
+                                <span class="price">$8.99</span>
+                            </div>
+                            <p>Rich chocolate cake with berry compote and vanilla cream</p>
+                            <div class="menu-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="category">Dessert</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!-- "Why Choose Us" feature boxes -->
+        <!-- Enhanced Why Choose Us -->
         <section id="about" class="why-choose-us">
             <div class="container">
-                <h2>Why Choose Us</h2>
+                <div class="section-header">
+                    <h2>Why Choose Us</h2>
+                    <p class="section-subtitle">Experience the difference that sets us apart from the rest</p>
+                </div>
                 <div class="features-grid">
                     <div class="feature-box">
-                        <i class="fas fa-leaf"></i>
-                        <h3>Fresh Ingredients</h3>
-                        <p>Locally sourced, organic ingredients delivered daily</p>
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Fresh Ingredients</h3>
+                            <p>Locally sourced, organic ingredients delivered daily from trusted farms to ensure the highest quality in every dish.</p>
+                            <div class="feature-highlight">Farm to Table</div>
+                        </div>
                     </div>
                     <div class="feature-box">
-                        <i class="fas fa-utensils"></i>
-                        <h3>Expert Chefs</h3>
-                        <p>Award-winning chefs with years of culinary expertise</p>
+                        <div class="feature-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Expert Chefs</h3>
+                            <p>Award-winning chefs with years of culinary expertise, trained in world-class kitchens and passionate about creating memorable experiences.</p>
+                            <div class="feature-highlight">15+ Years Experience</div>
+                        </div>
                     </div>
                     <div class="feature-box">
-                        <i class="fas fa-heart"></i>
-                        <h3>Warm Service</h3>
-                        <p>Friendly staff dedicated to your dining experience</p>
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Warm Service</h3>
+                            <p>Friendly, professional staff dedicated to making your dining experience exceptional with personalized attention to every detail.</p>
+                            <div class="feature-highlight">5-Star Service</div>
+                        </div>
                     </div>
                     <div class="feature-box">
-                        <i class="fas fa-star"></i>
-                        <h3>Quality Guarantee</h3>
-                        <p>100% satisfaction guaranteed or your money back</p>
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Quality Guarantee</h3>
+                            <p>100% satisfaction guaranteed with every meal. We stand behind our commitment to excellence and your complete satisfaction.</p>
+                            <div class="feature-highlight">Money Back Promise</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!-- Special offers with countdown timer -->
+        <!-- Redesigned Special Offers -->
         <section id="offers" class="special-offers">
             <div class="container">
-                <h2>Special Offers</h2>
-                <div class="offer-card">
-                    <h3>Weekend Special</h3>
-                    <p>Get 20% off on all main courses this weekend!</p>
-                    <div class="countdown" id="countdown">
-                        <div class="time-unit">
-                            <span id="days">00</span>
-                            <label>Days</label>
+                <div class="section-header">
+                    <h2>Exclusive Offers</h2>
+                    <p class="section-subtitle">Savor exceptional savings on our finest dishes</p>
+                </div>
+                <div class="offer-banner">
+                    <div class="offer-content">
+                        <div class="offer-text">
+                            <span class="offer-label">Weekend Special</span>
+                            <h3>25% OFF All Main Courses</h3>
+                            <p>Valid Friday to Sunday • Dine-in only</p>
+                            <div class="offer-features">
+                                <span><i class="fas fa-check"></i> All signature dishes included</span>
+                                <span><i class="fas fa-check"></i> No minimum order required</span>
+                                <span><i class="fas fa-check"></i> Combinable with drinks</span>
+                            </div>
                         </div>
-                        <div class="time-unit">
-                            <span id="hours">00</span>
-                            <label>Hours</label>
-                        </div>
-                        <div class="time-unit">
-                            <span id="minutes">00</span>
-                            <label>Minutes</label>
-                        </div>
-                        <div class="time-unit">
-                            <span id="seconds">00</span>
-                            <label>Seconds</label>
+                        <div class="offer-cta">
+                            <div class="countdown-compact" id="countdown">
+                                <div class="time-unit">
+                                    <span id="days">00</span>
+                                    <label>D</label>
+                                </div>
+                                <div class="time-unit">
+                                    <span id="hours">00</span>
+                                    <label>H</label>
+                                </div>
+                                <div class="time-unit">
+                                    <span id="minutes">00</span>
+                                    <label>M</label>
+                                </div>
+                                <div class="time-unit">
+                                    <span id="seconds">00</span>
+                                    <label>S</label>
+                                </div>
+                            </div>
+                            <a href="#contact" class="btn btn-offer">Reserve Table</a>
                         </div>
                     </div>
-                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                </div>
+                <div class="quick-offers">
+                    <div class="quick-offer">
+                        <i class="fas fa-gift"></i>
+                        <div>
+                            <h4>Happy Hour</h4>
+                            <p>50% off drinks 4-6 PM daily</p>
+                        </div>
+                    </div>
+                    <div class="quick-offer">
+                        <i class="fas fa-heart"></i>
+                        <div>
+                            <h4>Date Night</h4>
+                            <p>Free dessert for couples</p>
+                        </div>
+                    </div>
+                    <div class="quick-offer">
+                        <i class="fas fa-birthday-cake"></i>
+                        <div>
+                            <h4>Birthday Special</h4>
+                            <p>Complimentary cake & song</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         
-        <!-- Testimonial carousel -->
-        <section class="testimonials">
+        <!-- Enhanced Our Products Section -->
+        <section id="products" class="our-products">
             <div class="container">
-                <h2>What Our Customers Say</h2>
-                <div class="testimonial-carousel">
-                    <div class="testimonial active">
-                        <p>"Amazing food and excellent service! The atmosphere is perfect for a romantic dinner."</p>
-                        <div class="customer">
-                            <img src="images/team/customer1.jpg" alt="Sarah Johnson">
-                            <div>
-                                <h4>Sarah Johnson</h4>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Shop Now</span>
+                    </div>
+                    <h2>Our Premium Products</h2>
+                    <p class="section-subtitle">Take home the authentic flavors and premium quality ingredients that make our restaurant special</p>
+                </div>
+                
+                <!-- Product Categories Filter -->
+                <div class="product-filters">
+                    <button class="filter-btn active" data-filter="all">All Products</button>
+                    <button class="filter-btn" data-filter="sauces">Sauces & Condiments</button>
+                    <button class="filter-btn" data-filter="spices">Spices & Seasonings</button>
+                    <button class="filter-btn" data-filter="beverages">Beverages</button>
+                    <button class="filter-btn" data-filter="merchandise">Merchandise</button>
+                    <button class="filter-btn" data-filter="gifts">Gift Items</button>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Sauces & Condiments -->
+                    <div class="product-item" data-category="sauces">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1472476443507-c7a5948772fc?w=400&h=300&fit=crop" alt="Signature BBQ Sauce">
+                            <div class="product-badge best-seller">Best Seller</div>
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Signature BBQ Sauce</h3>
+                                <span class="price">$12.99</span>
+                            </div>
+                            <p>Our award-winning smoky BBQ sauce with a perfect balance of sweet and tangy</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial">
-                        <p>"Best restaurant in town! The chef's special is absolutely incredible."</p>
-                        <div class="customer">
-                            <img src="images/team/customer2.jpg" alt="Mike Davis">
-                            <div>
-                                <h4>Mike Davis</h4>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
+
+                    <div class="product-item" data-category="sauces">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=400&h=300&fit=crop" alt="Garlic Aioli">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Roasted Garlic Aioli</h3>
+                                <span class="price">$9.99</span>
+                            </div>
+                            <p>Creamy aioli made with roasted garlic and fresh herbs</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial">
-                        <p>"Outstanding quality and presentation. Will definitely come back again!"</p>
-                        <div class="customer">
-                            <img src="images/team/customer3.jpg" alt="Emily Chen">
-                            <div>
-                                <h4>Emily Chen</h4>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
+
+                    <div class="product-item" data-category="sauces">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=300&fit=crop" alt="Hot Sauce">
+                            <div class="product-badge new">New</div>
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Fiery Habanero Sauce</h3>
+                                <span class="price">$11.99</span>
+                            </div>
+                            <p>Intense heat with tropical fruit undertones</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="sauces">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?w=400&h=300&fit=crop" alt="Truffle Oil">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Black Truffle Oil</h3>
+                                <span class="price">$24.99</span>
+                            </div>
+                            <p>Premium truffle-infused olive oil for gourmet finishing</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock limited">Limited</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="sauces">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1571197119282-7c4e99e6e2c6?w=400&h=300&fit=crop" alt="Balsamic Glaze">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Aged Balsamic Glaze</h3>
+                                <span class="price">$16.99</span>
+                            </div>
+                            <p>Rich, sweet balsamic reduction aged to perfection</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spices & Seasonings -->
+                    <div class="product-item" data-category="spices">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=400&h=300&fit=crop" alt="Chef's Spice Blend">
+                            <div class="product-badge popular">Popular</div>
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Chef's Secret Spice Blend</h3>
+                                <span class="price">$8.99</span>
+                            </div>
+                            <p>Our signature 12-spice blend used in all our dishes</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="spices">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="Himalayan Salt">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Pink Himalayan Salt</h3>
+                                <span class="price">$7.99</span>
+                            </div>
+                            <p>Pure, unrefined salt with natural minerals</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="spices">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1599909533730-d8b2b1b4b6b5?w=400&h=300&fit=crop" alt="Smoked Paprika">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Spanish Smoked Paprika</h3>
+                                <span class="price">$6.99</span>
+                            </div>
+                            <p>Authentic Spanish pimentón with deep smoky flavor</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="spices">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=400&h=300&fit=crop" alt="Herb Mix">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Mediterranean Herb Mix</h3>
+                                <span class="price">$9.99</span>
+                            </div>
+                            <p>Dried herbs from the Mediterranean coast</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="spices">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1599909533730-d8b2b1b4b6b5?w=400&h=300&fit=crop" alt="Curry Powder">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Garam Masala Blend</h3>
+                                <span class="price">$8.49</span>
+                            </div>
+                            <p>Aromatic Indian spice blend with warm, complex flavors</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Beverages -->
+                    <div class="product-item" data-category="beverages">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=300&fit=crop" alt="Coffee Beans">
+                            <div class="product-badge best-seller">Best Seller</div>
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Premium Coffee Beans</h3>
+                                <span class="price">$16.99</span>
+                            </div>
+                            <p>Single-origin beans roasted fresh weekly</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="beverages">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=300&fit=crop" alt="Herbal Tea">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Signature Herbal Tea</h3>
+                                <span class="price">$12.99</span>
+                            </div>
+                            <p>Calming blend of chamomile, lavender, and mint</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="beverages">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Cold Brew">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Cold Brew Concentrate</h3>
+                                <span class="price">$14.99</span>
+                            </div>
+                            <p>Smooth, concentrated cold brew coffee</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="beverages">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop" alt="Kombucha">
+                            <div class="product-badge new">New</div>
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>House Kombucha</h3>
+                                <span class="price">$8.99</span>
+                            </div>
+                            <p>Probiotic-rich fermented tea with ginger and lemon</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="beverages">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Craft Soda">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Artisan Craft Soda</h3>
+                                <span class="price">$4.99</span>
+                            </div>
+                            <p>Small-batch soda with natural flavors</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Merchandise -->
+                    <div class="product-item" data-category="merchandise">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=400&h=300&fit=crop" alt="Branded Apron">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Chef's Apron</h3>
+                                <span class="price">$19.99</span>
+                            </div>
+                            <p>Professional-grade apron with restaurant logo</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="merchandise">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=300&fit=crop" alt="Coffee Mug">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Signature Coffee Mug</h3>
+                                <span class="price">$12.99</span>
+                            </div>
+                            <p>Ceramic mug with our restaurant's signature design</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="merchandise">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400&h=300&fit=crop" alt="T-Shirt">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Restaurant T-Shirt</h3>
+                                <span class="price">$24.99</span>
+                            </div>
+                            <p>Comfortable cotton tee with vintage logo design</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="merchandise">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop" alt="Tote Bag">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Canvas Tote Bag</h3>
+                                <span class="price">$16.99</span>
+                            </div>
+                            <p>Eco-friendly canvas bag with restaurant branding</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="merchandise">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop" alt="Baseball Cap">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Branded Baseball Cap</h3>
+                                <span class="price">$22.99</span>
+                            </div>
+                            <p>Adjustable cap with embroidered restaurant logo</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gift Items -->
+                    <div class="product-item" data-category="gifts">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop" alt="Gift Card">
+                            <div class="product-badge popular">Popular</div>
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Digital Gift Card</h3>
+                                <span class="price">$25 - $200</span>
+                            </div>
+                            <p>Perfect gift for food lovers and special occasions</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock digital">Digital</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="gifts">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop" alt="Recipe Book">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Chef's Recipe Collection</h3>
+                                <span class="price">$29.99</span>
+                            </div>
+                            <p>50 signature recipes from our executive chef</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock limited">Limited Edition</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="gifts">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=300&fit=crop" alt="Spice Gift Set">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Gourmet Spice Gift Set</h3>
+                                <span class="price">$39.99</span>
+                            </div>
+                            <p>Curated collection of our finest spices and seasonings</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="gifts">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop" alt="Cooking Kit">
+                            <div class="product-badge new">New</div>
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Home Cooking Kit</h3>
+                                <span class="price">$49.99</span>
+                            </div>
+                            <p>Everything needed to recreate our dishes at home</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="gifts">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop" alt="Wine Selection">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Curated Wine Selection</h3>
+                                <span class="price">$89.99</span>
+                            </div>
+                            <p>Hand-picked wines that pair perfectly with our menu</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock limited">Limited</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Products -->
+                    <div class="product-item" data-category="sauces">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=400&h=300&fit=crop" alt="Pesto Sauce">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Basil Pesto Sauce</h3>
+                                <span class="price">$13.99</span>
+                            </div>
+                            <p>Fresh basil pesto made with pine nuts and parmesan</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="spices">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=400&h=300&fit=crop" alt="Vanilla Extract">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Pure Vanilla Extract</h3>
+                                <span class="price">$18.99</span>
+                            </div>
+                            <p>Madagascar vanilla beans aged in premium bourbon</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="beverages">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=300&fit=crop" alt="Green Tea">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Premium Green Tea</h3>
+                                <span class="price">$15.99</span>
+                            </div>
+                            <p>High-grade sencha green tea from Japan</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="merchandise">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=400&h=300&fit=crop" alt="Kitchen Towels">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Kitchen Towel Set</h3>
+                                <span class="price">$18.99</span>
+                            </div>
+                            <p>Set of 3 premium cotton kitchen towels</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-category="gifts">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=300&fit=crop" alt="Sauce Sampler">
+                            <div class="product-overlay">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3>Sauce Sampler Pack</h3>
+                                <span class="price">$34.99</span>
+                            </div>
+                            <p>Mini bottles of all our signature sauces</p>
+                            <div class="product-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </span>
+                                <span class="stock in-stock">In Stock</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-controls">
-                    <button class="prev" aria-label="Previous testimonial">&lt;</button>
-                    <button class="next" aria-label="Next testimonial">&gt;</button>
+
+                <!-- Load More Button -->
+                <div class="load-more-section">
+                    <button class="load-more-btn">
+                        <i class="fas fa-plus"></i>
+                        Load More Products
+                    </button>
+                </div>
+            </div>
+        </section>
+                            </div>
+                            <p>Rich chocolate cake with berry compote and vanilla cream</p>
+                            <div class="menu-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="category">Dessert</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         
-        <!-- App download section -->
-        <section class="app-download">
+        <!-- Enhanced Why Choose Us -->
+        <section id="about" class="why-choose-us">
             <div class="container">
-                <div class="app-content">
-                    <div class="app-text">
-                        <h2>Download Our App</h2>
-                        <p>Order online, make reservations, and get exclusive offers with our mobile app.</p>
-                        <div class="app-buttons">
-                            <a href="#" class="app-btn">
-                                <img src="images/icons/app-store.png" alt="Download on App Store">
+                <div class="section-header">
+                    <h2>Why Choose Us</h2>
+                    <p class="section-subtitle">Experience the difference that sets us apart from the rest</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Fresh Ingredients</h3>
+                            <p>Locally sourced, organic ingredients delivered daily from trusted farms to ensure the highest quality in every dish.</p>
+                            <div class="feature-highlight">Farm to Table</div>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Expert Chefs</h3>
+                            <p>Award-winning chefs with years of culinary expertise, trained in world-class kitchens and passionate about creating memorable experiences.</p>
+                            <div class="feature-highlight">15+ Years Experience</div>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Warm Service</h3>
+                            <p>Friendly, professional staff dedicated to making your dining experience exceptional with personalized attention to every detail.</p>
+                            <div class="feature-highlight">5-Star Service</div>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Quality Guarantee</h3>
+                            <p>100% satisfaction guaranteed with every meal. We stand behind our commitment to excellence and your complete satisfaction.</p>
+                            <div class="feature-highlight">Money Back Promise</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Redesigned Customer Testimonials -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <!-- Section Header with Trust Indicators -->
+                <div class="testimonials-header">
+                    <div class="section-badge">
+                        <i class="fas fa-award"></i>
+                        <span>Customer Reviews</span>
+                    </div>
+                    <h2 class="section-title">What Our Customers Say</h2>
+                    <p class="section-subtitle">Join thousands of satisfied customers who love dining with us</p>
+                    
+                    <!-- Trust Indicators -->
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <div class="trust-rating">
+                                <span class="rating-number">4.9</span>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <span class="trust-label">Google Reviews</span>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-rating">
+                                <span class="rating-number">4.8</span>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <span class="trust-label">Yelp Reviews</span>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-count">
+                                <span class="count-number">2,500+</span>
+                                <span class="count-label">Happy Customers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonials Grid -->
+                <div class="testimonials-grid">
+                    <!-- Featured Testimonial -->
+                    <div class="testimonial-card testimonial-featured">
+                        <div class="testimonial-header">
+                            <div class="quote-decoration">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <div class="testimonial-badge">Featured Review</div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Absolutely phenomenal! This place has become our go-to restaurant for special occasions. The attention to detail, from the perfectly seasoned dishes to the impeccable service, makes every visit memorable. The chef's tasting menu is a culinary journey you don't want to miss!"</p>
+                            <div class="testimonial-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">5.0 • Excellent</span>
+                            </div>
+                        </div>
+                        <div class="customer-profile">
+                            <div class="customer-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face" alt="Sarah Johnson">
+                                <div class="verified-badge">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="customer-info">
+                                <h4 class="customer-name">Sarah Johnson</h4>
+                                <p class="customer-title">Food Critic & Blogger</p>
+                                <div class="customer-meta">
+                                    <span class="visit-info">
+                                        <i class="fas fa-calendar"></i>
+                                        Visited last week
+                                    </span>
+                                    <span class="platform">
+                                        <i class="fab fa-google"></i>
+                                        Google
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Regular Testimonials -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">"Best dining experience in the city! The beef tenderloin was cooked to perfection and the service was outstanding. Will definitely be back!"</p>
+                            <div class="testimonial-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-profile">
+                            <div class="customer-avatar">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" alt="Mike Davis">
+                            </div>
+                            <div class="customer-info">
+                                <h4 class="customer-name">Mike Davis</h4>
+                                <p class="customer-title">Regular Customer</p>
+                                <span class="platform-small">
+                                    <i class="fab fa-yelp"></i>
+                                    Yelp
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">"Perfect for our anniversary dinner! The ambiance, food quality, and service exceeded all expectations. Highly recommend the pasta primavera!"</p>
+                            <div class="testimonial-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-profile">
+                            <div class="customer-avatar">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" alt="Emily Chen">
+                            </div>
+                            <div class="customer-info">
+                                <h4 class="customer-name">Emily Chen</h4>
+                                <p class="customer-title">Anniversary Celebration</p>
+                                <span class="platform-small">
+                                    <i class="fab fa-google"></i>
+                                    Google
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">"Fantastic family restaurant! Kids loved the atmosphere and adults enjoyed the sophisticated menu. Great value for money!"</p>
+                            <div class="testimonial-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-profile">
+                            <div class="customer-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="James Wilson">
+                            </div>
+                            <div class="customer-info">
+                                <h4 class="customer-name">James Wilson</h4>
+                                <p class="customer-title">Family Dinner</p>
+                                <span class="platform-small">
+                                    <i class="fab fa-yelp"></i>
+                                    Yelp
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">"Impressed by the fresh ingredients and creative presentation. The salmon was divine and the chocolate cake was the perfect ending!"</p>
+                            <div class="testimonial-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-profile">
+                            <div class="customer-avatar">
+                                <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=60&h=60&fit=crop&crop=face" alt="Lisa Martinez">
+                            </div>
+                            <div class="customer-info">
+                                <h4 class="customer-name">Lisa Martinez</h4>
+                                <p class="customer-title">Business Lunch</p>
+                                <span class="platform-small">
+                                    <i class="fab fa-google"></i>
+                                    Google
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Call to Action -->
+                <div class="testimonials-cta">
+                    <div class="cta-content">
+                        <h3>Ready to Create Your Own Amazing Experience?</h3>
+                        <p>Join our community of satisfied customers and taste the difference</p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn btn-primary">
+                                <i class="fas fa-calendar-alt"></i>
+                                Reserve Your Table
                             </a>
-                            <a href="#" class="app-btn">
-                                <img src="images/icons/google-play.png" alt="Get it on Google Play">
+                            <a href="#menu" class="btn btn-secondary">
+                                <i class="fas fa-utensils"></i>
+                                View Our Menu
                             </a>
                         </div>
                     </div>
-                    <div class="app-image">
-                        <img src="images/app-mockup.png" alt="Restaurant app mockup">
+                    <div class="cta-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">15k+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Return Rate</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4.9★</span>
+                            <span class="stat-label">Average Rating</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        <section id="contact" class="contact">
+        <!-- Enhanced App Download Section -->
+        <section class="app-download" id="app-download">
             <div class="container">
-                <h2>Contact Us</h2>
-                <address>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Restaurant Street, City, State 12345</p>
-                    <p><i class="fas fa-phone"></i> <a href="tel:+1234567890">(123) 456-7890</a></p>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@restaurant.com">info@restaurant.com</a></p>
-                </address>
+                <div class="app-download-wrapper">
+                    <!-- Section Header -->
+                    <div class="app-header">
+                        <div class="app-badge">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile App</span>
+                        </div>
+                        <h2 class="app-title">Order Faster with Our App</h2>
+                        <p class="app-subtitle">Skip the wait, earn rewards, and enjoy exclusive deals with our mobile app</p>
+                    </div>
+
+                    <!-- Main Content -->
+                    <div class="app-content">
+                        <!-- Left Side - Phone Mockup -->
+                        <div class="app-mockup">
+                            <div class="phone-container">
+                                <div class="phone-frame">
+                                    <div class="phone-screen">
+                                        <div class="app-interface">
+                                            <div class="app-header-bar">
+                                                <div class="app-logo">Delicious</div>
+                                                <div class="app-cart">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <span class="cart-count">3</span>
+                                                </div>
+                                            </div>
+                                            <div class="app-hero-banner">
+                                                <div class="banner-text">
+                                                    <h3>25% OFF</h3>
+                                                    <p>First Order</p>
+                                                </div>
+                                            </div>
+                                            <div class="app-menu-items">
+                                                <div class="app-item">
+                                                    <div class="item-image"></div>
+                                                    <div class="item-info">
+                                                        <div class="item-name"></div>
+                                                        <div class="item-price"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="app-item">
+                                                    <div class="item-image"></div>
+                                                    <div class="item-info">
+                                                        <div class="item-name"></div>
+                                                        <div class="item-price"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="app-item">
+                                                    <div class="item-image"></div>
+                                                    <div class="item-info">
+                                                        <div class="item-name"></div>
+                                                        <div class="item-price"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-glow"></div>
+                            </div>
+                        </div>
+
+                        <!-- Right Side - Features & Download -->
+                        <div class="app-info">
+                            <div class="app-features">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Lightning Fast Ordering</h4>
+                                        <p>Order in under 30 seconds with saved preferences</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-gift"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Exclusive App Deals</h4>
+                                        <p>Get 25% off your first order and weekly specials</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Loyalty Rewards</h4>
+                                        <p>Earn points with every order and unlock free meals</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Real-Time Tracking</h4>
+                                        <p>Track your order from kitchen to your doorstep</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Download Buttons -->
+                            <div class="download-section">
+                                <h3 class="download-title">Download Now</h3>
+                                <div class="download-buttons">
+                                    <a href="#" class="download-btn apple">
+                                        <div class="btn-icon">
+                                            <i class="fab fa-apple"></i>
+                                        </div>
+                                        <div class="btn-text">
+                                            <span class="btn-small">Download on the</span>
+                                            <span class="btn-large">App Store</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="download-btn google">
+                                        <div class="btn-icon">
+                                            <i class="fab fa-google-play"></i>
+                                        </div>
+                                        <div class="btn-text">
+                                            <span class="btn-small">Get it on</span>
+                                            <span class="btn-large">Google Play</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <!-- QR Code Section -->
+                                <div class="qr-section">
+                                    <div class="qr-code">
+                                        <div class="qr-pattern">
+                                            <div class="qr-squares">
+                                                <div class="qr-square"></div>
+                                                <div class="qr-square"></div>
+                                                <div class="qr-square"></div>
+                                                <div class="qr-square"></div>
+                                                <div class="qr-square"></div>
+                                                <div class="qr-square"></div>
+                                                <div class="qr-square"></div>
+                                                <div class="qr-square"></div>
+                                                <div class="qr-square"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="qr-text">
+                                        <p><strong>Scan to Download</strong></p>
+                                        <span>Quick access to both stores</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App Stats -->
+                    <div class="app-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">50k+</div>
+                            <div class="stat-label">Downloads</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">4.8★</div>
+                            <div class="stat-label">App Rating</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">30s</div>
+                            <div class="stat-label">Avg Order Time</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Available</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Redesigned Get in Touch Section -->
+        <section id="contact" class="get-in-touch">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fas fa-comments"></i>
+                        <span>Contact</span>
+                    </div>
+                    <h2>Get in Touch</h2>
+                    <p class="section-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                </div>
+
+                <!-- Main Contact Layout -->
+                <div class="contact-layout">
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <div class="form-container">
+                            <div class="form-header">
+                                <h3>Send us a Message</h3>
+                                <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                            </div>
+                            
+                            <form class="modern-form">
+                                <div class="form-grid">
+                                    <div class="form-field">
+                                        <input type="text" id="firstName" name="firstName" required>
+                                        <label for="firstName">First Name</label>
+                                        <div class="field-line"></div>
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="text" id="lastName" name="lastName" required>
+                                        <label for="lastName">Last Name</label>
+                                        <div class="field-line"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-field">
+                                    <input type="email" id="email" name="email" required>
+                                    <label for="email">Email Address</label>
+                                    <div class="field-line"></div>
+                                </div>
+                                
+                                <div class="form-field">
+                                    <input type="tel" id="phone" name="phone">
+                                    <label for="phone">Phone Number (Optional)</label>
+                                    <div class="field-line"></div>
+                                </div>
+                                
+                                <div class="form-field">
+                                    <select id="subject" name="subject" required>
+                                        <option value=""></option>
+                                        <option value="reservation">Table Reservation</option>
+                                        <option value="catering">Catering Inquiry</option>
+                                        <option value="private-event">Private Event</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="general">General Question</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <label for="subject">Subject</label>
+                                    <div class="field-line"></div>
+                                </div>
+                                
+                                <div class="form-field">
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                    <label for="message">Your Message</label>
+                                    <div class="field-line"></div>
+                                </div>
+                                
+                                <button type="submit" class="form-submit-btn">
+                                    <span>Send Message</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="contact-info-section">
+                        <div class="info-container">
+                            <div class="info-header">
+                                <h3>Contact Information</h3>
+                                <p>Get in touch with us through any of these channels</p>
+                            </div>
+                            
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="method-content">
+                                        <h4>Visit Us</h4>
+                                        <p>123 Culinary Street<br>Downtown District<br>New York, NY 10001</p>
+                                        <a href="#" class="method-link">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            Get Directions
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="method-content">
+                                        <h4>Call Us</h4>
+                                        <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                                        <span class="method-note">Mon-Sun: 11 AM - 10 PM</span>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="method-content">
+                                        <h4>Email Us</h4>
+                                        <p><a href="mailto:info@delicious.com">info@delicious.com</a></p>
+                                        <span class="method-note">We respond within 24 hours</span>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="method-content">
+                                        <h4>Opening Hours</h4>
+                                        <div class="hours-schedule">
+                                            <div class="hours-row">
+                                                <span>Monday - Thursday</span>
+                                                <span>11:00 AM - 10:00 PM</span>
+                                            </div>
+                                            <div class="hours-row">
+                                                <span>Friday - Saturday</span>
+                                                <span>11:00 AM - 11:00 PM</span>
+                                            </div>
+                                            <div class="hours-row">
+                                                <span>Sunday</span>
+                                                <span>12:00 PM - 9:00 PM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Social Links -->
+                            <div class="contact-social">
+                                <h4>Follow Us</h4>
+                                <div class="social-grid">
+                                    <a href="#" class="social-item">
+                                        <i class="fab fa-facebook-f"></i>
+                                        <span>Facebook</span>
+                                    </a>
+                                    <a href="#" class="social-item">
+                                        <i class="fab fa-instagram"></i>
+                                        <span>Instagram</span>
+                                    </a>
+                                    <a href="#" class="social-item">
+                                        <i class="fab fa-twitter"></i>
+                                        <span>Twitter</span>
+                                    </a>
+                                    <a href="#" class="social-item">
+                                        <i class="fab fa-youtube"></i>
+                                        <span>YouTube</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Action Cards -->
+                <div class="quick-contact-actions">
+                    <div class="action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="action-content">
+                            <h4>Make Reservation</h4>
+                            <p>Book your table online</p>
+                        </div>
+                        <a href="#" class="action-btn">Reserve Now</a>
+                    </div>
+                    
+                    <div class="action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="action-content">
+                            <h4>Order Online</h4>
+                            <p>Skip the wait, order ahead</p>
+                        </div>
+                        <a href="#" class="action-btn">Order Now</a>
+                    </div>
+                    
+                    <div class="action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="action-content">
+                            <h4>Private Events</h4>
+                            <p>Host your special occasion</p>
+                        </div>
+                        <a href="#" class="action-btn">Learn More</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     
-    <!-- Four-column footer -->
+    <!-- Enhanced White Theme Footer -->
     <footer role="contentinfo" class="footer">
         <div class="container">
-            <div class="footer-columns">
-                <div class="footer-column">
-                    <h3>About Delicious</h3>
-                    <p>Experience exceptional dining with fresh ingredients, authentic flavors, and warm hospitality.</p>
+            <!-- Main Footer Content -->
+            <div class="footer-main">
+                <!-- Brand Section -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <h3>Delicious</h3>
+                        <span class="logo-tagline">Restaurant</span>
+                    </div>
+                    <p class="brand-description">Experience exceptional dining with fresh ingredients, authentic flavors, and warm hospitality that creates unforgettable memories.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#menu">Menu</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#about">About Us</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Reservations</a></li>
+                        <li><a href="#">Private Events</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Opening Hours</h3>
-                    <ul>
-                        <li>Mon-Thu: 11:00 AM - 10:00 PM</li>
-                        <li>Fri-Sat: 11:00 AM - 11:00 PM</li>
-                        <li>Sunday: 12:00 PM - 9:00 PM</li>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Dine In</a></li>
+                        <li><a href="#">Takeaway</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Catering</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Corporate Events</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Contact Info</h3>
-                    <ul>
-                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
-                        <li><i class="fas fa-envelope"></i> info@restaurant.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Restaurant St</li>
-                    </ul>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p>123 Culinary Street</p>
+                                <p>Downtown, NY 10001</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p><a href="mailto:info@delicious.com">info@delicious.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Stay Updated</h4>
+                    <p class="newsletter-text">Subscribe to get special offers, free giveaways, and updates.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="opening-hours">
+                        <h5>Opening Hours</h5>
+                        <div class="hours-compact">
+                            <span>Mon-Thu: 11AM-10PM</span>
+                            <span>Fri-Sat: 11AM-11PM</span>
+                            <span>Sun: 12PM-9PM</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Delicious Restaurant. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
     
     <script src="js/script.js"></script>
+    <script src="js/products.js"></script>
 </body>
 </html>

@@ -103,25 +103,9 @@ function initMenuEffects() {
     });
 }
 
-// Navbar scroll effect
-function initNavbarScroll() {
-    const header = document.querySelector('.header');
-    
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
-            header.style.background = 'rgba(26, 26, 26, 0.95)';
-            header.style.backdropFilter = 'blur(10px)';
-        } else {
-            header.style.background = 'var(--background-dark)';
-            header.style.backdropFilter = 'none';
-        }
-    });
-}
-
 // Initialize all functions when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     initCountdown();
     initTestimonialCarousel();
     initMenuEffects();
-    initNavbarScroll();
 });
